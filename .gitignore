@@ -184,3 +184,6 @@ job_*
 
 #irrelevant
 *scgen*
+
+# opencode
+opencode.json

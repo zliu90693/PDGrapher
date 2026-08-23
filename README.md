@@ -21,7 +21,7 @@ The project consists of next folders:
 conda env create -f conda-env.yml
 conda activate pdgrapher
 pip install pip==23.2.1
-pip install -r requirements.txt
+# pip install -r requirements.txt
 
 pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
 pip install torch-scatter==2.0.9 -f https://data.pyg.org/whl/torch-1.10.1+cu111.html
@@ -31,6 +31,7 @@ pip install torch-spline-conv==1.2.1 -f https://data.pyg.org/whl/torch-1.10.1+cu
 pip install torch-geometric==2.0.4 -f https://data.pyg.org/whl/torch-1.10.1+cu111.html
 pip install torchmetrics==0.9.3
 pip install lightning==1.9.5
+pip install lightning-cloud==0.5.70 # Otherwise, lightning-cloud 0.6.0 will be installed automatically, and errors will occur during the execution of `from lightning import Fabric` and `from lightning.fabric.wrappers import _FabricModule`.
 
 ```
 
