@@ -187,3 +187,6 @@ job_*
 
 # opencode
 opencode.json
+
+# env deployment
+.env/log.md
